@@ -1,0 +1,129 @@
+Claude-Sonnet-4.5  :
+User: prompt
+
+You are a senior front-end engineer specializing in React and TypeScript.
+Your task is to build a complete Meeting Room Booking web application from scratch based strictly on the provided input_ui_spec.txt.
+
+This is a UI Case evaluation focusing on:
+- Creating an application from scratch
+- UI completeness and correctness
+- State management and interaction logic
+- TypeScript correctness
+
+────────────────────────────────────Technical Requirements────────────────────────────────────
+- Framework: React (18+) + TypeScript
+- State management: React hooks (useState / useEffect / useMemo)
+- Styling: Any approach (CSS / Tailwind / inline), keep it simple
+- No backend, no authentication
+- Use mock or in-memory data only
+
+────────────────────────────────────Your Responsibilities────────────────────────────────────
+1. Read and analyze input_ui_spec.txt carefully
+2. Design and implement all required screens and interactions
+3. Implement booking logic and conflict prevention in the UI
+4. Ensure all data models are fully typed
+5. Provide clear user flows for booking and viewing reservations
+
+────────────────────────────────────Required Screens────────────────────────────────────
+- Meeting room list
+- Booking calendar / time-slot view
+- Booking creation form
+- Booking overview (by room or by day)
+
+────────────────────────────────────Deliverables────────────────────────────────────
+- Fully working React + TypeScript application
+- Complete component structure
+- Typed data models
+- Explanation of booking conflict handling
+- Clear UI navigation between screens
+
+────────────────────────────────────Strict Rules────────────────────────────────────
+- Do NOT invent features not defined in input_ui_spec.txt
+- Do NOT omit any required screen
+- Do NOT use JavaScript instead of TypeScript
+- Do NOT output partial UI sketches — implement the app
+
+GitHub Copilot: Optimizing tool selection...I'll build a complete Meeting Room Booking application based on the specifications. Let me create all the necessary files. 
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.3/case2/Claude-Sonnet-4.5/package.json)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.3/case2/Claude-Sonnet-4.5/tsconfig.json)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.3/case2/Claude-Sonnet-4.5/tsconfig.node.json)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.3/case2/Claude-Sonnet-4.5/vite.config.ts)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.3/case2/Claude-Sonnet-4.5/index.html)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.3/case2/Claude-Sonnet-4.5/src/types.ts)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.3/case2/Claude-Sonnet-4.5/src/mockData.ts)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.3/case2/Claude-Sonnet-4.5/src/utils/bookingUtils.ts)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.3/case2/Claude-Sonnet-4.5/src/components/RoomList.tsx)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.3/case2/Claude-Sonnet-4.5/src/components/BookingCalendar.tsx)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.3/case2/Claude-Sonnet-4.5/src/components/BookingForm.tsx)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.3/case2/Claude-Sonnet-4.5/src/components/BookingOverview.tsx)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.3/case2/Claude-Sonnet-4.5/src/App.tsx)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.3/case2/Claude-Sonnet-4.5/src/main.tsx)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.3/case2/Claude-Sonnet-4.5/src/App.css)
+
+Created [](file:///Users/danni_yin/Documents/Bugbash/26.2/2.3/case2/Claude-Sonnet-4.5/README.md)
+
+I've successfully created a complete Meeting Room Booking application from scratch! Here's what's been implemented:
+
+## 📋 Application Overview
+
+**4 Complete Screens:**
+1. **Room List** - Browse all meeting rooms with capacity and booking counts
+2. **Booking Calendar** - Visual time-slot grid showing available/booked slots
+3. **Booking Form** - Create new bookings with validation and conflict prevention
+4. **Booking Overview** - View all bookings grouped by room or date
+
+## 🎯 Key Features
+
+**Booking Conflict Prevention:**
+- Real-time validation prevents overlapping bookings
+- Algorithm checks if two bookings overlap: `start1 < end2 AND end1 > start2`
+- Clear error messages with conflict warnings
+- Users cannot submit conflicting bookings
+
+**Fully Typed TypeScript:**
+- `Room` interface (id, name, capacity)
+- `Booking` interface (id, roomId, title, date, startTime, endTime)
+- All components and utilities fully typed
+- Strict mode enabled
+
+**State Management:**
+- React hooks (useState, useMemo, useCallback)
+- Centralized state in App.tsx
+- No external state management libraries
+
+## 🚀 To Run the Application
+
+```bash
+npm install
+npm run dev
+```
+
+The app will open at `http://localhost:5173`
+
+## 📁 Complete Structure
+
+- **types.ts** - TypeScript definitions
+- **mockData.ts** - Initial rooms and bookings
+- **bookingUtils.ts** - Conflict detection logic
+- **src/components/** - 4 complete screen components
+- **App.tsx** - Main application with navigation
+- **App.css** - Complete styling
+
+The README contains detailed documentation on the conflict handling algorithm, user flows, and implementation details.
+
+Made changes.

@@ -1,0 +1,20 @@
+Application Name: Team Meeting Room Booking
+
+Entities:
+- Room (id, name, capacity)
+- Booking (id, roomId, title, date, startTime, endTime)
+
+Rules:
+- A room cannot have overlapping bookings
+- Time slots are within a single day
+- Bookings are created manually via a form
+
+UI Expectations:
+- Users can see available and booked time slots
+- Conflicting time ranges must be prevented in UI
+- Bookings should be easy to scan visually
+
+Constraints:
+- Desktop web only
+- No backend
+- No user accounts

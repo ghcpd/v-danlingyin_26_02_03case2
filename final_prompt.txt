@@ -1,0 +1,43 @@
+prompt
+
+You are a senior front-end engineer specializing in React and TypeScript.
+Your task is to build a complete Meeting Room Booking web application from scratch based strictly on the provided input_ui_spec.txt.
+
+This is a UI Case evaluation focusing on:
+- Creating an application from scratch
+- UI completeness and correctness
+- State management and interaction logic
+- TypeScript correctness
+
+────────────────────────────────────Technical Requirements────────────────────────────────────
+- Framework: React (18+) + TypeScript
+- State management: React hooks (useState / useEffect / useMemo)
+- Styling: Any approach (CSS / Tailwind / inline), keep it simple
+- No backend, no authentication
+- Use mock or in-memory data only
+
+────────────────────────────────────Your Responsibilities────────────────────────────────────
+1. Read and analyze input_ui_spec.txt carefully
+2. Design and implement all required screens and interactions
+3. Implement booking logic and conflict prevention in the UI
+4. Ensure all data models are fully typed
+5. Provide clear user flows for booking and viewing reservations
+
+────────────────────────────────────Required Screens────────────────────────────────────
+- Meeting room list
+- Booking calendar / time-slot view
+- Booking creation form
+- Booking overview (by room or by day)
+
+────────────────────────────────────Deliverables────────────────────────────────────
+- Fully working React + TypeScript application
+- Complete component structure
+- Typed data models
+- Explanation of booking conflict handling
+- Clear UI navigation between screens
+
+────────────────────────────────────Strict Rules────────────────────────────────────
+- Do NOT invent features not defined in input_ui_spec.txt
+- Do NOT omit any required screen
+- Do NOT use JavaScript instead of TypeScript
+- Do NOT output partial UI sketches — implement the app
